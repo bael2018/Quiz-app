@@ -161,6 +161,131 @@ header{
     z-index: 10;
 }
 
+.change button{
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px 25px;
+    color: white;
+    background: none;
+    transition: .3s;
+    font-size: 17px;
+    outline: none;
+    border: 2px solid rgb(0, 228, 0);
+    cursor: pointer;
+}
+
+.change button:hover{
+    background: rgb(0, 228, 0);
+}
+
+.admin{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin button{
+    background: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 0px 10px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 228, 0);
+}
+
+.admin button:hover{
+    color: white;
+    background: rgb(0, 228, 0);
+}
+
+.edit{
+    width: 50%;
+    left: 25%;
+    z-index: 10;
+    top: 20%;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.8);
+    border-radius: 5px;
+    transition: .3s;
+    box-shadow: 0px 0px 3px 3px rgb(235, 235, 235);
+    background: white;
+    position: fixed;
+}
+
+.edit.appear{
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+}   
+
+.edit_container{
+    padding: 20px 30px ;
+}
+
+.edit_text{
+    text-align: center;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.edit_title{
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 24px;
+    color: rgb(41, 41, 41);
+}
+
+.edit_title input{
+    background: none;
+    width: 75%;
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    padding: 8px;
+    border-bottom: 1px solid rgb(0, 228, 0);
+}
+
+.edit_body{
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 24px;
+    color: rgb(41, 41, 41);
+}
+
+.edit_body div{
+    margin-bottom: 10px;
+}
+
+.edit_body input{
+    background: none;
+    width: 80%;
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    padding: 13px 8px;
+    border-bottom: 1px solid rgb(0, 228, 0);
+}
+
+.edit_footer button{
+    background: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 0px 10px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 228, 0);
+}
+
+.edit_footer button:hover{
+    color: white;
+    background: rgb(0, 228, 0);
+}
+
+.edit_footer{
+    margin: 20px 0;
+    margin-top: 30px;
+    text-align: center;
+}
+
 /* Adaptation */
 
 @media screen and (max-width:1050px){
@@ -185,15 +310,27 @@ header{
         width: 80%;
         left: 10%;
     }
+
+    .edit{
+        width: 70%;
+        left: 15%;
+    }
 }
 
-.quiz_question h2{
-    margin: 0px;
-    color: rgb(41, 41, 41);
-    font-size: 30px;
+@media screen and (max-width:680px){
+
+    .edit{
+        width: 80%;
+        left: 10%;
+    }
 }
 
 @media screen and (max-width:450px){
+
+    .edit{
+        width: 90%;
+        left: 5%;
+    }
     
     .quiz_container{
         width: 90%;
@@ -211,3 +348,4 @@ header{
         padding: 10px;
     }
 }
+

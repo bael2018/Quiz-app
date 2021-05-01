@@ -124,7 +124,7 @@ function showCard(arr){
             return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>1) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -134,6 +134,10 @@ function showCard(arr){
                         <li onclick='clicked3()'><span class="circle circle3"></span><span class="bot">D</span> ${item.itemFour}</li>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit next1">
                 submit
@@ -158,7 +162,7 @@ next1.addEventListener('click' , e => {
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>2) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -168,6 +172,10 @@ next1.addEventListener('click' , e => {
                         <span onclick='clicked7()'> <li onclick="correct()"><span class="circle circle7"></span><span class="bot">D</span> ${item.itemFour}</li></span>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask1(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="next2()">
                 submit
@@ -185,7 +193,7 @@ function next2(){
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>3) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -195,6 +203,10 @@ function next2(){
                         <li onclick='clicked11()'><span class="circle circle11"></span><span class="bot">D</span> ${item.itemFour}</li>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask2(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="next3()">
                 submit
@@ -212,7 +224,7 @@ function next3(){
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>4) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -222,6 +234,10 @@ function next3(){
                         <li onclick='clicked15()'><span class="circle circle15"></span><span class="bot">D</span> ${item.itemFour}</li>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask3(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="next4()">
                 submit
@@ -239,7 +255,7 @@ function next4(){
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>5) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -249,6 +265,10 @@ function next4(){
                         <li onclick='clicked19()'><span class="circle circle19"></span><span class="bot">D</span> ${item.itemFour}</li>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask4(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="next5()">
                 submit
@@ -266,7 +286,7 @@ function next5(){
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>6) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -276,6 +296,10 @@ function next5(){
                         <li onclick='clicked23()'><span class="circle circle23"></span><span class="bot">D</span> ${item.itemFour}</li>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask5(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="next6()">
                 submit
@@ -293,7 +317,7 @@ function next6(){
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>7) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -303,6 +327,10 @@ function next6(){
                         <span onclick='clicked27()'><li onclick="correct()"><span class="circle circle27"></span><span class="bot">D</span> ${item.itemFour}</li></span>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask6(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="next7()">
                 submit
@@ -320,7 +348,7 @@ function next7(){
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>8) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -330,6 +358,10 @@ function next7(){
                         <li onclick='clicked31()'><span class="circle circle31"></span><span class="bot">D</span> ${item.itemFour}</li>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask7(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="next8()">
                 submit
@@ -347,7 +379,7 @@ function next8(){
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>9) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -357,6 +389,10 @@ function next8(){
                         <li onclick='clicked35()'><span class="circle circle35"></span><span class="bot">D</span> ${item.itemFour}</li>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask8(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="next9()">
                 submit
@@ -374,7 +410,7 @@ function next9(){
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>10) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -384,6 +420,10 @@ function next9(){
                         <li onclick='clicked39()'><span class="circle circle39"></span><span class="bot">D</span> ${item.itemFour}</li>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask9(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="next10()">
                 submit
@@ -401,7 +441,7 @@ function next10(){
              return `
             <div class="quiz_body">
                 <div class="quiz_question">
-                    <h2> ${item.title} <span>?</span></h2>
+                    <h2>11) ${item.title} <span>?</span></h2>
                 </div>
                 <div class="quiz_content">
                     <ul>
@@ -411,6 +451,10 @@ function next10(){
                         <li onclick='clicked43()'><span class="circle circle43"></span><span class="bot">D</span> ${item.itemFour}</li>
                     </ul>
                 </div>
+            </div>
+            <div class="admin">
+                <button onclick="EditTask(${item.id})">Edit</button>
+                <button onclick="DeleteTask10(${item.id})">Delete</button>
             </div>
             <div class="quiz_submit" onclick="result()">
                 submit
@@ -819,4 +863,63 @@ function clicked42(){
 function clicked43(){
     const circle = document.querySelector('.circle43')
     circle.classList.toggle('active')
+}
+
+
+// Edit
+
+const editContainer = document.querySelector('.edit')
+const quizTitle = document.querySelector('.quizTitle')
+const editText1 = document.querySelector('.editText1')
+const editText2 = document.querySelector('.editText2')
+const editText3 = document.querySelector('.editText3')
+const editText4 = document.querySelector('.editText4')
+
+function EditTask(id){
+    editContainer.classList.toggle('appear')
+
+    const editBtn = document.querySelector('.editBtn')
+    editBtn.addEventListener('click' , e => {
+        e.preventDefault()
+
+        if(quizTitle.value === '' || editText1.value === '' || editText2.value === '' || editText3.value === '' || editText4.value === '') alert("Fill the inputs")
+
+        if(quizTitle.value !== '' || editText1.value !== '' || editText2.value !== '' || editText3.value !== '' || editText4.value !== ''){
+            const quiz = JSON.parse(localStorage.getItem('quiz'))
+            const newQuiz = quiz.map(item => {
+                if(item.id === id){
+                    return {
+                        ...item,
+                        title: quizTitle.value,
+                        itemOne: editText1.value,
+                        itemTwo: editText2.value,
+                        itemThree: editText3.value,
+                        itemFour: editText4.value,
+                    }
+                }else{
+                    return item
+                }
+            })
+            localStorage.setItem('quiz' , JSON.stringify(newQuiz))
+            window.location.reload()
+    
+            quizTitle.value = ''
+            editText1.value = ''
+            editText2.value = ''
+            editText3.value = ''
+            editText3.value = ''
+        }
+    })
+
+    const edtiCloseBtn = document.querySelector('.edtiCloseBtn')
+    edtiCloseBtn.addEventListener('click' , e => {
+        e.preventDefault()
+        editContainer.classList.remove('appear')
+
+        quizTitle.value = ''
+        editText1.value = ''
+        editText2.value = ''
+        editText3.value = ''
+        editText3.value = ''
+    })
 }
